@@ -19,7 +19,7 @@ public class GracefulShutdownEventListener implements ApplicationListener<Contex
 
     private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(GracefulShutdownEventListener.class);
 
-    private GracefulShutdownTomcatConnector gracefulShutdownTomcatConnector;
+    private final GracefulShutdownTomcatConnector gracefulShutdownTomcatConnector;
 
     public GracefulShutdownEventListener(GracefulShutdownTomcatConnector gracefulShutdownTomcatConnector) {
         this.gracefulShutdownTomcatConnector = gracefulShutdownTomcatConnector;
